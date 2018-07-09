@@ -1,0 +1,10 @@
+#set( $symbol_pound = '#' )
+#set( $symbol_dollar = '$' )
+#set( $symbol_escape = '\' )
+DATASOURCE_CLASS=org.apache.derby.jdbc.ClientDriver
+DB_ENGINE=derby
+DB_HOST=host.docker.internal
+DB_PORT=1527
+DB_NAME=${artifactId}_stage
+DB_USER=app
+DB_PASSWORD=app
