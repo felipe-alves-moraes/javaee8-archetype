@@ -1,2 +1,2 @@
 # javaee8-archetype
-Java EE 8 archetype, with docker ready env files and liquibase-plugin set.
+This archetype (based on [Adam Bien's javaee8-essentials-archetype](https://github.com/AdamBien/javaee8-essentials-archetype)), add env files to docker that let you configure the datasource of your application based on the environment that it will run, also adds the `liquibase-plugin` with configuration files for you to choose the environment that you will run your db changes (command `mvn liquibase:update -Dliquibase.env=local`). It also comes with the payara-plugin configured for you to run you app just running the following command: `mvn payara-micro:start`
